@@ -13,8 +13,8 @@ App.use(cors({
   allowHeaders: ['Content-Type', 'application/json', 'Accept']
 }))
 
-router.get('/:name', (ctx) => {
-    ctx.body = ctx.params.name
+router.get('/name', (ctx) => {
+    ctx.body = "name"
 })
 
 router.post('/', (ctx) => {
